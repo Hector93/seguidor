@@ -1,0 +1,762 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1938 ]
+[d frameptr 6 ]
+"11 /home/hector/MPLABXProjects/segidorLineas.X/sensores.c
+[e E2703 . `uc
+AN0 0
+AN1 1
+AN2 2
+AN3 3
+AN4 4
+AN8 8
+AN10 10
+AN12 12
+channel_Temp 29
+channel_DAC 30
+channel_FVR 31
+]
+"85 /home/hector/MPLABXProjects/segidorLineas.X/mcc_generated_files/adc.c
+[e E2703 . `uc
+AN0 0
+AN1 1
+AN2 2
+AN3 3
+AN4 4
+AN8 8
+AN10 10
+AN12 12
+channel_Temp 29
+channel_DAC 30
+channel_FVR 31
+]
+"1 /opt/microchip/xc8/v2.05/pic/sources/c99/common/abs.c
+[v _abs abs `(i  1 e 2 0 ]
+"7 /opt/microchip/xc8/v2.05/pic/sources/c99/common/aodiv.c
+[v ___aodiv __aodiv `(o  1 e 8 0 ]
+"7 /opt/microchip/xc8/v2.05/pic/sources/c99/common/aomod.c
+[v ___aomod __aomod `(o  1 e 8 0 ]
+"72 /opt/microchip/xc8/v2.05/pic/sources/c99/common/doprnt.c
+[v _pad pad `(i  1 s 2 pad ]
+"274
+[v _dtoa dtoa `(i  1 s 2 dtoa ]
+"670
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+"1368
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+"8 /opt/microchip/xc8/v2.05/pic/sources/c99/common/nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+"8 /opt/microchip/xc8/v2.05/pic/sources/c99/common/nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+"5 /opt/microchip/xc8/v2.05/pic/sources/c99/common/printf.c
+[v _printf printf `(i  1 e 2 0 ]
+"10 /opt/microchip/xc8/v2.05/pic/sources/c99/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"12 /opt/microchip/xc8/v2.05/pic/sources/c99/common/strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"4 /opt/microchip/xc8/v2.05/pic/sources/c99/common/Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 /opt/microchip/xc8/v2.05/pic/sources/c99/pic/__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"6 /home/hector/MPLABXProjects/segidorLineas.X/aplicacion/puenteh.c
+[v _motorA motorA `(v  1 e 1 0 ]
+"30
+[v _motorB motorB `(v  1 e 1 0 ]
+"49 /home/hector/MPLABXProjects/segidorLineas.X/main.c
+[v _main main `(v  1 e 1 0 ]
+"65 /home/hector/MPLABXProjects/segidorLineas.X/mcc_generated_files/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+"112
+[v _ADC_GetConversion ADC_GetConversion `(us  1 e 2 0 ]
+"140
+[v _ADC_ISR ADC_ISR `(v  1 e 1 0 ]
+"64 /home/hector/MPLABXProjects/segidorLineas.X/mcc_generated_files/epwm1.c
+[v _EPWM1_Initialize EPWM1_Initialize `(v  1 e 1 0 ]
+"90
+[v _EPWM1_LoadDutyValue EPWM1_LoadDutyValue `(v  1 e 1 0 ]
+"64 /home/hector/MPLABXProjects/segidorLineas.X/mcc_generated_files/epwm2.c
+[v _EPWM2_Initialize EPWM2_Initialize `(v  1 e 1 0 ]
+"90
+[v _EPWM2_LoadDutyValue EPWM2_LoadDutyValue `(v  1 e 1 0 ]
+"85 /home/hector/MPLABXProjects/segidorLineas.X/mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+"148
+[v _EUSART_Read EUSART_Read `(uc  1 e 1 0 ]
+"170
+[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
+"198
+[v _putch putch `(v  1 e 1 0 ]
+"203
+[v _EUSART_Transmit_ISR EUSART_Transmit_ISR `(v  1 e 1 0 ]
+"222
+[v _EUSART_Receive_ISR EUSART_Receive_ISR `(v  1 e 1 0 ]
+"246
+[v _EUSART_RxDataHandler EUSART_RxDataHandler `(v  1 e 1 0 ]
+"256
+[v _EUSART_DefaultFramingErrorHandler EUSART_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+"258
+[v _EUSART_DefaultOverrunErrorHandler EUSART_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+"266
+[v _EUSART_DefaultErrorHandler EUSART_DefaultErrorHandler `(v  1 e 1 0 ]
+"270
+[v _EUSART_SetFramingErrorHandler EUSART_SetFramingErrorHandler `(v  1 e 1 0 ]
+"274
+[v _EUSART_SetOverrunErrorHandler EUSART_SetOverrunErrorHandler `(v  1 e 1 0 ]
+"278
+[v _EUSART_SetErrorHandler EUSART_SetErrorHandler `(v  1 e 1 0 ]
+"282
+[v _EUSART_SetTxInterruptHandler EUSART_SetTxInterruptHandler `(v  1 e 1 0 ]
+"286
+[v _EUSART_SetRxInterruptHandler EUSART_SetRxInterruptHandler `(v  1 e 1 0 ]
+"52 /home/hector/MPLABXProjects/segidorLineas.X/mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+"50 /home/hector/MPLABXProjects/segidorLineas.X/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"63
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"73
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+"55 /home/hector/MPLABXProjects/segidorLineas.X/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"64 /home/hector/MPLABXProjects/segidorLineas.X/mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+"119
+[v _TMR2_ISR TMR2_ISR `(v  1 e 1 0 ]
+"132
+[v _TMR2_SetInterruptHandler TMR2_SetInterruptHandler `(v  1 e 1 0 ]
+"136
+[v _TMR2_DefaultInterruptHandler TMR2_DefaultInterruptHandler `(v  1 e 1 0 ]
+"3 /home/hector/MPLABXProjects/segidorLineas.X/sensores.c
+[v _imprimeValoreSensores imprimeValoreSensores `(v  1 e 1 0 ]
+"11
+[v _getValorADC getValorADC `(us  1 e 2 0 ]
+"19
+[v _getValorSensor getValorSensor `(us  1 e 2 0 ]
+"96 /home/hector/MPLABXProjects/segidorLineas.X/mcc_generated_files/eusart.h
+[v _EUSART_TxDefaultInterruptHandler EUSART_TxDefaultInterruptHandler `*.37(v  1 e 2 0 ]
+"97
+[v _EUSART_RxDefaultInterruptHandler EUSART_RxDefaultInterruptHandler `*.37(v  1 e 2 0 ]
+[s S410 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"374 /opt/microchip/xc8/v2.05/pic/include/pic16f1938.h
+[s S419 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S424 . 1 `S410 1 . 1 0 `S419 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES424  1 e 1 @11 ]
+[s S210 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"653
+[u S219 . 1 `S210 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES219  1 e 1 @17 ]
+"1017
+[v _TMR2 TMR2 `VEuc  1 e 1 @26 ]
+"1037
+[v _PR2 PR2 `VEuc  1 e 1 @27 ]
+"1057
+[v _T2CON T2CON `VEuc  1 e 1 @28 ]
+[s S263 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 T2OUTPS0 1 0 :1:3 
+`uc 1 T2OUTPS1 1 0 :1:4 
+`uc 1 T2OUTPS2 1 0 :1:5 
+`uc 1 T2OUTPS3 1 0 :1:6 
+]
+"1078
+[s S271 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 . 1 0 :1:2 
+`uc 1 T2OUTPS 1 0 :4:3 
+]
+[u S275 . 1 `S263 1 . 1 0 `S271 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES275  1 e 1 @28 ]
+"1228
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1290
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+"1352
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+"1414
+[v _TRISE TRISE `VEuc  1 e 1 @144 ]
+[s S231 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 TMR1GIE 1 0 :1:7 
+]
+"1452
+[u S240 . 1 `S231 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES240  1 e 1 @145 ]
+[s S164 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 TMR0SE 1 0 :1:4 
+`uc 1 TMR0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+"1623
+[s S173 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+]
+[u S178 . 1 `S164 1 . 1 0 `S173 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES178  1 e 1 @149 ]
+"1734
+[v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
+"1793
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @152 ]
+"1851
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"1992
+[v _ADRESL ADRESL `VEuc  1 e 1 @155 ]
+"2012
+[v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
+"2032
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
+[s S517 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 CHS4 1 0 :1:6 
+]
+"2061
+[s S525 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADGO 1 0 :1:1 
+`uc 1 CHS 1 0 :5:2 
+]
+[s S529 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[s S532 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[u S535 . 1 `S517 1 . 1 0 `S525 1 . 1 0 `S529 1 . 1 0 `S532 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES535  1 e 1 @157 ]
+"2121
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
+"2193
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+"2255
+[v _LATB LATB `VEuc  1 e 1 @269 ]
+"2317
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+[s S24 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"2334
+[u S33 . 1 `S24 1 . 1 0 ]
+[v _LATCbits LATCbits `VES33  1 e 1 @270 ]
+"2379
+[v _LATE LATE `VEuc  1 e 1 @272 ]
+"2672
+[v _BORCON BORCON `VEuc  1 e 1 @278 ]
+"3021
+[v _APFCON APFCON `VEuc  1 e 1 @285 ]
+"3077
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"3135
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"3387
+[v _RCREG RCREG `VEuc  1 e 1 @409 ]
+"3407
+[v _TXREG TXREG `VEuc  1 e 1 @410 ]
+"3443
+[v _SPBRGL SPBRGL `VEuc  1 e 1 @411 ]
+"3493
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @412 ]
+"3526
+[v _RCSTA RCSTA `VEuc  1 e 1 @413 ]
+[s S699 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"3543
+[u S708 . 1 `S699 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES708  1 e 1 @413 ]
+"3588
+[v _TXSTA TXSTA `VEuc  1 e 1 @414 ]
+[s S677 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"3605
+[u S686 . 1 `S677 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES686  1 e 1 @414 ]
+"3650
+[v _BAUDCON BAUDCON `VEuc  1 e 1 @415 ]
+"3702
+[v _WPUB WPUB `VEuc  1 e 1 @525 ]
+"3772
+[v _WPUE WPUE `VEuc  1 e 1 @528 ]
+"4168
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @657 ]
+"4188
+[v _CCPR1H CCPR1H `VEuc  1 e 1 @658 ]
+"4208
+[v _CCP1CON CCP1CON `VEuc  1 e 1 @659 ]
+"4290
+[v _PWM1CON PWM1CON `VEuc  1 e 1 @660 ]
+"4357
+[v _ECCP1AS ECCP1AS `VEuc  1 e 1 @661 ]
+"4474
+[v _PSTR1CON PSTR1CON `VEuc  1 e 1 @662 ]
+"4525
+[v _CCPR2L CCPR2L `VEuc  1 e 1 @664 ]
+"4545
+[v _CCPR2H CCPR2H `VEuc  1 e 1 @665 ]
+"4565
+[v _CCP2CON CCP2CON `VEuc  1 e 1 @666 ]
+"4647
+[v _PWM2CON PWM2CON `VEuc  1 e 1 @667 ]
+"4714
+[v _ECCP2AS ECCP2AS `VEuc  1 e 1 @668 ]
+"4831
+[v _PSTR2CON PSTR2CON `VEuc  1 e 1 @669 ]
+[s S342 . 1 `uc 1 C1TSEL0 1 0 :1:0 
+`uc 1 C1TSEL1 1 0 :1:1 
+`uc 1 C2TSEL0 1 0 :1:2 
+`uc 1 C2TSEL1 1 0 :1:3 
+`uc 1 C3TSEL0 1 0 :1:4 
+`uc 1 C3TSEL1 1 0 :1:5 
+`uc 1 C4TSEL0 1 0 :1:6 
+`uc 1 C4TSEL1 1 0 :1:7 
+]
+"4898
+[s S351 . 1 `uc 1 C1TSEL 1 0 :2:0 
+`uc 1 C2TSEL 1 0 :2:2 
+`uc 1 C3TSEL 1 0 :2:4 
+`uc 1 C4TSEL 1 0 :2:6 
+]
+[u S356 . 1 `S342 1 . 1 0 `S351 1 . 1 0 ]
+[v _CCPTMRS0bits CCPTMRS0bits `VES356  1 e 1 @670 ]
+"55 /opt/microchip/xc8/v2.05/pic/sources/c99/common/doprnt.c
+[v _flags flags `i  1 s 2 flags ]
+[v _prec prec `i  1 s 2 prec ]
+[v _width width `i  1 s 2 width ]
+"66
+[v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
+"69
+[v _nout nout `i  1 s 2 nout ]
+"62 /home/hector/MPLABXProjects/segidorLineas.X/mcc_generated_files/eusart.c
+[v _eusartTxHead eusartTxHead `VEuc  1 e 1 0 ]
+"63
+[v _eusartTxTail eusartTxTail `VEuc  1 e 1 0 ]
+"64
+[v _eusartTxBuffer eusartTxBuffer `VE[64]uc  1 e 64 0 ]
+"65
+[v _eusartTxBufferRemaining eusartTxBufferRemaining `VEuc  1 e 1 0 ]
+"67
+[v _eusartRxHead eusartRxHead `VEuc  1 e 1 0 ]
+"68
+[v _eusartRxTail eusartRxTail `VEuc  1 e 1 0 ]
+"69
+[v _eusartRxBuffer eusartRxBuffer `VE[64]uc  1 e 64 0 ]
+[s S599 . 1 `uc 1 perr 1 0 :1:0 
+`uc 1 ferr 1 0 :1:1 
+`uc 1 oerr 1 0 :1:2 
+`uc 1 reserved 1 0 :5:3 
+]
+"70
+[u S604 . 1 `S599 1 . 1 0 `uc 1 status 1 0 ]
+[v _eusartRxStatusBuffer eusartRxStatusBuffer `VE[64]S604  1 e 64 0 ]
+"71
+[v _eusartRxCount eusartRxCount `VEuc  1 e 1 0 ]
+"72
+[v _eusartRxLastError eusartRxLastError `VES604  1 e 1 0 ]
+"77
+[v _EUSART_FramingErrorHandler EUSART_FramingErrorHandler `*.37(v  1 e 2 0 ]
+"78
+[v _EUSART_OverrunErrorHandler EUSART_OverrunErrorHandler `*.37(v  1 e 2 0 ]
+"79
+[v _EUSART_ErrorHandler EUSART_ErrorHandler `*.37(v  1 e 2 0 ]
+"58 /home/hector/MPLABXProjects/segidorLineas.X/mcc_generated_files/tmr2.c
+[v _TMR2_InterruptHandler TMR2_InterruptHandler `*.37(v  1 e 2 0 ]
+"49 /home/hector/MPLABXProjects/segidorLineas.X/main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"76
+} 0
+"30 /home/hector/MPLABXProjects/segidorLineas.X/aplicacion/puenteh.c
+[v _motorB motorB `(v  1 e 1 0 ]
+{
+[v motorB@status status `uc  1 a 1 wreg ]
+[v motorB@status status `uc  1 a 1 wreg ]
+[v motorB@status status `uc  1 a 1 3 ]
+"47
+} 0
+"6
+[v _motorA motorA `(v  1 e 1 0 ]
+{
+[v motorA@status status `uc  1 a 1 wreg ]
+[v motorA@status status `uc  1 a 1 wreg ]
+[v motorA@status status `uc  1 a 1 3 ]
+"20
+} 0
+"3 /home/hector/MPLABXProjects/segidorLineas.X/sensores.c
+[v _imprimeValoreSensores imprimeValoreSensores `(v  1 e 1 0 ]
+{
+"5
+[v imprimeValoreSensores@i i `i  1 a 2 3 ]
+"10
+} 0
+"5 /opt/microchip/xc8/v2.05/pic/sources/c99/common/printf.c
+[v _printf printf `(i  1 e 2 0 ]
+{
+"8
+[v printf@ap ap `[1]*.4v  1 a 1 2 ]
+"5
+[v printf@fmt fmt `*.25DCuc  1 p 2 71 ]
+"13
+} 0
+"1368 /opt/microchip/xc8/v2.05/pic/sources/c99/common/doprnt.c
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+{
+[s S1008 _IO_FILE 0 ]
+[v vfprintf@fp fp `*.1S1008  1 a 1 wreg ]
+"1371
+[v vfprintf@cfmt cfmt `*.25uc  1 a 2 69 ]
+"1368
+[v vfprintf@fp fp `*.1S1008  1 a 1 wreg ]
+[v vfprintf@fmt fmt `*.25DCuc  1 p 2 63 ]
+[v vfprintf@ap ap `*.4*.4v  1 p 1 65 ]
+"1373
+"1368
+[v vfprintf@fp fp `*.1S1008  1 a 1 68 ]
+"1382
+} 0
+"670
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+{
+[s S1008 _IO_FILE 0 ]
+[v vfpfcnvrt@fp fp `*.1S1008  1 a 1 wreg ]
+"674
+[v vfpfcnvrt@ll ll `o  1 a 8 54 ]
+"670
+[v vfpfcnvrt@fp fp `*.1S1008  1 a 1 wreg ]
+[v vfpfcnvrt@fmt fmt `*.4*.25uc  1 p 1 47 ]
+[v vfpfcnvrt@ap ap `*.4*.4v  1 p 1 48 ]
+"680
+"670
+[v vfpfcnvrt@fp fp `*.1S1008  1 a 1 62 ]
+"1365
+} 0
+"274
+[v _dtoa dtoa `(i  1 s 2 dtoa ]
+{
+[s S1008 _IO_FILE 0 ]
+[v dtoa@fp fp `*.1S1008  1 a 1 wreg ]
+"277
+[v dtoa@n n `o  1 a 8 37 ]
+"276
+[v dtoa@i i `i  1 a 2 45 ]
+[v dtoa@s s `i  1 a 2 35 ]
+[v dtoa@w w `i  1 a 2 33 ]
+[v dtoa@p p `i  1 a 2 31 ]
+"274
+[v dtoa@fp fp `*.1S1008  1 a 1 wreg ]
+[v dtoa@d d `o  1 p 8 17 ]
+"280
+"274
+[v dtoa@fp fp `*.1S1008  1 a 1 30 ]
+"315
+} 0
+"72
+[v _pad pad `(i  1 s 2 pad ]
+{
+[s S1008 _IO_FILE 0 ]
+[v pad@fp fp `*.1S1008  1 a 1 wreg ]
+"74
+[v pad@w w `i  1 a 2 14 ]
+[v pad@i i `i  1 a 2 12 ]
+"72
+[v pad@fp fp `*.1S1008  1 a 1 wreg ]
+[v pad@buf buf `*.4uc  1 p 1 8 ]
+[v pad@p p `i  1 p 2 9 ]
+"77
+"72
+[v pad@fp fp `*.1S1008  1 a 1 16 ]
+"95
+} 0
+"12 /opt/microchip/xc8/v2.05/pic/sources/c99/common/strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+[v strlen@s s `*.4DCuc  1 a 1 wreg ]
+"14
+[v strlen@a a `*.4DCuc  1 a 1 4 ]
+"12
+[v strlen@s s `*.4DCuc  1 a 1 wreg ]
+"14
+[v strlen@s s `*.4DCuc  1 a 1 5 ]
+"26
+} 0
+"8 /opt/microchip/xc8/v2.05/pic/sources/c99/common/nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+{
+[v fputs@s s `*.4DCuc  1 a 1 wreg ]
+"11
+[v fputs@i i `i  1 a 2 5 ]
+"10
+[v fputs@c c `uc  1 a 1 4 ]
+"8
+[v fputs@s s `*.4DCuc  1 a 1 wreg ]
+[s S1354 _IO_FILE 5 `*.1uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
+[v fputs@fp fp `*.1S1354  1 p 1 0 ]
+"13
+[v fputs@s s `*.4DCuc  1 a 1 7 ]
+"19
+} 0
+"8 /opt/microchip/xc8/v2.05/pic/sources/c99/common/nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+{
+[v fputc@c c `i  1 p 2 4 ]
+[s S1354 _IO_FILE 5 `*.1uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
+[v fputc@fp fp `*.1S1354  1 p 1 6 ]
+"21
+} 0
+"198 /home/hector/MPLABXProjects/segidorLineas.X/mcc_generated_files/eusart.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+[v putch@txData txData `uc  1 a 1 wreg ]
+[v putch@txData txData `uc  1 a 1 wreg ]
+"200
+[v putch@txData txData `uc  1 a 1 3 ]
+"201
+} 0
+"170
+[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
+{
+[v EUSART_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART_Write@txData txData `uc  1 a 1 2 ]
+"191
+} 0
+"1 /opt/microchip/xc8/v2.05/pic/sources/c99/common/abs.c
+[v _abs abs `(i  1 e 2 0 ]
+{
+[v abs@a a `i  1 p 2 4 ]
+"4
+} 0
+"7 /opt/microchip/xc8/v2.05/pic/sources/c99/common/aomod.c
+[v ___aomod __aomod `(o  1 e 8 0 ]
+{
+"12
+[v ___aomod@sign sign `uc  1 a 1 3 ]
+[v ___aomod@counter counter `uc  1 a 1 2 ]
+"7
+[v ___aomod@divisor divisor `o  1 p 8 0 ]
+[v ___aomod@dividend dividend `o  1 p 8 8 ]
+"36
+} 0
+"7 /opt/microchip/xc8/v2.05/pic/sources/c99/common/aodiv.c
+[v ___aodiv __aodiv `(o  1 e 8 0 ]
+{
+"12
+[v ___aodiv@quotient quotient `o  1 a 8 4 ]
+"13
+[v ___aodiv@sign sign `uc  1 a 1 3 ]
+[v ___aodiv@counter counter `uc  1 a 1 2 ]
+"7
+[v ___aodiv@divisor divisor `o  1 p 8 0 ]
+[v ___aodiv@dividend dividend `o  1 p 8 8 ]
+"43
+} 0
+"19 /home/hector/MPLABXProjects/segidorLineas.X/sensores.c
+[v _getValorSensor getValorSensor `(us  1 e 2 0 ]
+{
+"20
+[v getValorSensor@valor valor `us  1 a 2 0 ]
+"19
+[v getValorSensor@numSensor numSensor `i  1 p 2 9 ]
+"48
+} 0
+"11
+[v _getValorADC getValorADC `(us  1 e 2 0 ]
+{
+[v getValorADC@c c `E2703  1 a 1 wreg ]
+[v getValorADC@c c `E2703  1 a 1 wreg ]
+"15
+[v getValorADC@c c `E2703  1 a 1 8 ]
+"17
+} 0
+"112 /home/hector/MPLABXProjects/segidorLineas.X/mcc_generated_files/adc.c
+[v _ADC_GetConversion ADC_GetConversion `(us  1 e 2 0 ]
+{
+[v ADC_GetConversion@channel channel `E2703  1 a 1 wreg ]
+[v ADC_GetConversion@channel channel `E2703  1 a 1 wreg ]
+"115
+[v ADC_GetConversion@channel channel `E2703  1 a 1 4 ]
+"133
+} 0
+"50 /home/hector/MPLABXProjects/segidorLineas.X/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"61
+} 0
+"73
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+{
+"77
+} 0
+"64 /home/hector/MPLABXProjects/segidorLineas.X/mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+{
+"85
+} 0
+"132
+[v _TMR2_SetInterruptHandler TMR2_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 1 ]
+"134
+} 0
+"55 /home/hector/MPLABXProjects/segidorLineas.X/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"98
+} 0
+"63 /home/hector/MPLABXProjects/segidorLineas.X/mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"71
+} 0
+"85 /home/hector/MPLABXProjects/segidorLineas.X/mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+{
+"127
+} 0
+"282
+[v _EUSART_SetTxInterruptHandler EUSART_SetTxInterruptHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetTxInterruptHandler@interruptHandler interruptHandler `*.37(v  1 p 2 1 ]
+"284
+} 0
+"286
+[v _EUSART_SetRxInterruptHandler EUSART_SetRxInterruptHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetRxInterruptHandler@interruptHandler interruptHandler `*.37(v  1 p 2 1 ]
+"288
+} 0
+"274
+[v _EUSART_SetOverrunErrorHandler EUSART_SetOverrunErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 1 ]
+"276
+} 0
+"270
+[v _EUSART_SetFramingErrorHandler EUSART_SetFramingErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 1 ]
+"272
+} 0
+"278
+[v _EUSART_SetErrorHandler EUSART_SetErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 1 ]
+"280
+} 0
+"64 /home/hector/MPLABXProjects/segidorLineas.X/mcc_generated_files/epwm2.c
+[v _EPWM2_Initialize EPWM2_Initialize `(v  1 e 1 0 ]
+{
+"88
+} 0
+"64 /home/hector/MPLABXProjects/segidorLineas.X/mcc_generated_files/epwm1.c
+[v _EPWM1_Initialize EPWM1_Initialize `(v  1 e 1 0 ]
+{
+"88
+} 0
+"65 /home/hector/MPLABXProjects/segidorLineas.X/mcc_generated_files/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+{
+"83
+} 0
+"52 /home/hector/MPLABXProjects/segidorLineas.X/mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+{
+"82
+} 0
+"119 /home/hector/MPLABXProjects/segidorLineas.X/mcc_generated_files/tmr2.c
+[v _TMR2_ISR TMR2_ISR `(v  1 e 1 0 ]
+{
+"129
+} 0
+"136
+[v _TMR2_DefaultInterruptHandler TMR2_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"139
+} 0
+"203 /home/hector/MPLABXProjects/segidorLineas.X/mcc_generated_files/eusart.c
+[v _EUSART_Transmit_ISR EUSART_Transmit_ISR `(v  1 e 1 0 ]
+{
+"220
+} 0
+"222
+[v _EUSART_Receive_ISR EUSART_Receive_ISR `(v  1 e 1 0 ]
+{
+"244
+} 0
+"258
+[v _EUSART_DefaultOverrunErrorHandler EUSART_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+{
+"264
+} 0
+"256
+[v _EUSART_DefaultFramingErrorHandler EUSART_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+{
+} 0
+"266
+[v _EUSART_DefaultErrorHandler EUSART_DefaultErrorHandler `(v  1 e 1 0 ]
+{
+"268
+} 0
+"246
+[v _EUSART_RxDataHandler EUSART_RxDataHandler `(v  1 e 1 0 ]
+{
+"254
+} 0
+"140 /home/hector/MPLABXProjects/segidorLineas.X/mcc_generated_files/adc.c
+[v _ADC_ISR ADC_ISR `(v  1 e 1 0 ]
+{
+"144
+} 0
